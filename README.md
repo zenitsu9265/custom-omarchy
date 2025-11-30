@@ -1,0 +1,65 @@
+.config/hypr/looknfeel.conf 
+gaps_in = 3
+gaps_out = 6
+
+.config/hypr/monitors.conf
+env = GDK_SCALE,1
+monitor = ,preferred,auto,1
+
+.config/ghostty/config
+font-size = 13
+
+.config/waybar/config.jsonc
+{
+  "position": "bottom",
+  "height": 30,
+
+  # bold workspaces with <b></b> tag in all 1-9 to 0 
+
+  "clock" : {
+    "interval": 1,
+    "format": "<b>{:%A %I:%M:%S %P}</b>"
+    "format-alt": "<b>{}</b>"
+  }
+}
+
+.config/waybar/style.css
+* {
+  font-size: 15px;
+}
+#custom-update {
+  font-size: 12px;
+}
+#custom-screenrecording-indicator {
+  font-size: 12px;
+}
+
+.config/omarchy/themes/catppuccin/waybar.css
+@define-color background rgba(24, 24, 36, 0.6);
+
+.config/hypr/hyprlock.conf
+animations {
+    enabled = true
+}
+
+.config/hypr/input.conf
+sensitivity = 0.35
+natural_scroll = true
+
+.local/share/omarchy/default/walker/themes/omarchy-default/style.css
+* {
+  font-family: JetBrainsMono Nerd Font
+  font-size: 20px;
+}
+
+.config/starship.toml
+copy-paste
+
+.config/omarchy/branding/ about.txt and screensaver.txt
+copy-paste
+
+.config/omarchy/themes/catppuccin/backgrounds
+copy-paste
+
+.config/hypr/bindings.conf
+copy-paste
