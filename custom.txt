@@ -13,19 +13,31 @@ font-size = 13
 {
   "position": "bottom",
   "height": 30,
+  "modules-right": [
+    "custom-uptime",
+  ],
 
   # bold workspaces with <b></b> tag in all 1-9 to 0 
 
+  "custom-uptime": {
+    "exec": "uptime -p",
+    "interval": 60,
+    "format": "<b>{}</b>"
+  },
+
   "clock" : {
     "interval": 1,
-    "format": "<b>{:%A %I:%M:%S %P}</b>"
-    "format-alt": "<b>{}</b>"
-  }
+    "format": "<b>{:%A %I:%M:%S %P}</b>",
+    "format-alt": "<b>{:L%d %B W%V %Y}</b>",
+  },
 }
 
 .config/waybar/style.css
 * {
   font-size: 15px;
+}
+#custom-uptime {
+  margin-right: 15px;
 }
 #custom-update {
   font-size: 12px;
@@ -33,9 +45,6 @@ font-size = 13
 #custom-screenrecording-indicator {
   font-size: 12px;
 }
-
-.config/omarchy/themes/catppuccin/waybar.css
-@define-color background rgba(24, 24, 36, 0.6);
 
 .config/hypr/hyprlock.conf
 animations {
