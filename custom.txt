@@ -72,3 +72,6 @@ copy-paste
 
 .config/hypr/bindings.conf
 copy-paste
+
+.config/elephant/websearch.toml
+copy-paste
